@@ -1,15 +1,14 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Header from './components/side-menu.js'
-import Form1 from './components/first-form.js'
-import Form2 from './components/second-form.js';
-import Form3 from './components/third-form.js'
-import Form4 from './components/fourth-form.js';
+import Header from './components/side-menu'
+import Form1 from './components/first-form'
+import Form2 from './components/second-form';
+import Form3 from './components/third-form'
+import Form4 from './components/fourth-form';
 import { Navigate } from 'react-router-dom';
-import { store } from './state/store.js'
+import { store } from './state/store'
 import { Provider } from 'react-redux';
-import FinalForm from './components/fifth-form.js';
-
+import FinalForm from './components/fifth-form';
 
 function App() {
   return (
@@ -26,8 +25,8 @@ function App() {
     <Route path = '/form4' element = {<Form4 />}/>
     <Route path= '/form5' element={<FinalForm />} />
     <Route path='*' element={<Navigate to="/" />} />
-    </Routes>
 
+    </Routes>
     </Router>
 
     </Provider>
