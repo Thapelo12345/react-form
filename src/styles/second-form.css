@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+#plans {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    height: 30vh;
+}
+
+@media only screen and (max-width: 734px) {
+    #plans {
+        flex-direction: column;
+    }
+}
+
+.plan-btn {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid hsl(229, 24%, 87%);
+    background: none;
+    border-radius: 10px;
+    padding: 5% 3%;
+    width: 40%;
+    height: fit-content;
+    min-height: 70px;
+    margin: 2%;
+    transition-duration: .2s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 734px) {
+    .plan-btn {
+        flex-direction: row;
+        width: 90%;
+        padding: 2%;
+        align-items: center;
+    }
+}
+
+.plan-btn:hover {
+    border: 1.5px solid gray;
+}
+
+.second-svg {
+    margin-bottom: 40%;
+}
+
+@media only screen and (max-width: 734px) {
+    .second-svg {
+        margin: 0;
+    }
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    padding: 4%;
+    margin-left: -10%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 734px) {
+    .btn-text {
+        width: 50%;
+        padding: 0;
+        height: 100%;
+        margin-left: 5%;
+    }
+
+}
+.plan-type {
+    font-weight: 600;
+    margin: 0;
+    align-self: self-start;
+}
+
+.prices {
+    margin: 0;
+    margin-bottom: -10%;
+    align-self: self-start;
+    color: hsl(231, 11%, 63%);
+    font-weight: 400;
+}
+
+@media screen and (max-width: 734px) {
+    .plan-type {
+        margin-bottom: 4%;
+    }
+    .prices {
+        margin-bottom: 4%;
+    }
+}
+
+.free-bees {
+    text-align: left;
+    color: rgb(25, 25, 26);
+    margin-top: 15%;
+    margin-bottom: 0;
+    align-self: self-start;
+    font-weight: 550;
+    width: 118%;
+    padding: 0;
+}
+
+@media screen and (max-width: 734px) {
+    .free-bees {
+        margin-top: 0;
+        margin-bottom: 4%;
+    }
+}
+
+#monthly-yearly-holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+    width: 97%;
+    height: 8%;
+    padding: 0;
+    margin-top: 4%;
+    border-radius: 4px;
+    background-color: hsl(217, 100%, 97%)
+}
+
+@media screen and (max-width: 734px){
+    #monthly-yearly-holder {
+        margin-top: 35%;
+    }
+}
+
+#toggle-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 7%;
+    padding: 0;
+    width: 11%;
+    min-width: 20px;
+    height: 55%;
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 734px) {
+    #toggle-container {
+        height: 70%;
+    }
+}
+h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Ubuntu", serif;
+    font-style: normal;
+}
+
+#yearly-title {
+    color: gray;
+}
+
+.toggle-btn {
+    position: relative;
+    background-color: hsl(213, 96%, 18%);
+    width: 100%;
+    min-width: 45px;
+    height: 90%;
+    cursor: pointer;
+    margin: 0 5%;
+    border-radius: inherit;
+}
+
+.toggle-btn::before{
+    content: '';
+    position: absolute;
+    top: 4.4%;
+    background-color: white;
+    transition-property: transform;
+    transition-duration: .2s;
+    width: 37%; 
+    min-width: 17px;
+    height: 80%;
+    border-radius: 50%;
+    margin: 1px;
+}
+
+#toggle[type="checkbox"]:checked + .toggle-btn::before {
+    transform: translateX(150%);
+}
+
+#toggle[type="checkbox"]{
+    display: none;
+}

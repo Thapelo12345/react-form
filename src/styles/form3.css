@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.add-ons-holder {
+  border: 1px solid hsl(229, 24%, 87%);
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: fit-content;
+  margin-bottom: 5%;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+.check-labels {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 2%;
+}
+
+.form3-input {
+  margin: 0;
+  width: 10%;
+  align-self: center;
+}
+
+@media screen and (max-width: 734px) {
+  .form3-input {
+    height: 10%;
+  }
+}
+
+.form3-input:checked {
+  background-color: cyan;
+}
+.form3-label {
+  display: flex;
+  flex-direction: row;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.form3-label h4 {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: clamp(1rem, 1vw, 1.2rem);
+  margin: 0;
+}
+
+.form3-label p {
+  font-size: clamp(.7rem, 1vw, .8rem);
+  word-spacing: .2cap;
+  margin: 0;
+  color: hsl(231, 11%, 63%);
+}
+
+.form3-pricess {
+  align-self: center;
+  font-family: "Ubuntu", sans-serif;
+  font-style: bold;
+  font-size: 700;
+  color: hsl(243, 100%, 62%);
+  margin: 0;
+  margin-left: auto;
+  width: max-content;
+}
+
+@media screen and (max-width: 734px) {
+  .form3-pricess {
+    z-index: 2;
+  }
+}

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+#side-menu {
+    align-items: center;
+    justify-items: center;
+    width: 30%;
+    min-width: min(250px, 100%);
+    height: 100%;
+    border-radius: 10px;
+    background-image: url('/assets/images/bg-sidebar-desktop.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 806px){
+    #side-menu {
+        margin: 2%;
+        height: 96%;
+    }
+}
+
+
+#side-container {
+    width: 80%;
+    list-style: none;
+    padding: 2%;
+    margin: 10% 5%;
+}
+
+.step-number {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 12% 0;
+}
+
+.large-number {
+    border: 1px solid hsl(231, 100%, 99%);
+    color: hsl(0, 0%, 100%);
+    font-size: clamp(1rem, 1vw, 1.1rem);
+    padding: 6px;
+    border-radius: 50px; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%; 
+    min-width: 19px;
+    max-width: 400px;
+}
+
+.step-number div {
+    margin-left: 10%;
+    width: 90%;
+    padding: 0;
+}
+
+h4, h5 {
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h5{
+    font-size: .7rem;
+    font-weight: 400;
+    color: hsl(231, 100%, 99%);
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+h6{ 
+    color: hsl(231, 11%, 63%);
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 734px) {
+    #side-menu {
+        width: 100%;
+        height: 25%;
+        background-image: url('/assets/images/bg-sidebar-mobile.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 0;
+        margin: 0;
+    }
+
+    #side-container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 72%;
+        height: 25%;
+        margin-top: 7%;
+        padding: 0;
+    }
+
+    .step-number {
+        position: relative;
+        margin: 0;
+    }
+    
+
+    .side-titles {
+        position: absolute;
+        visibility: hidden;
+        z-index: -1;
+    }
+
+    .step-number div {
+        border: 2px solid yellow;
+        visibility: hidden;
+        z-index: -1;
+    }
+    /* h6, h5 {
+        z-index: -1;
+    } */
+} 

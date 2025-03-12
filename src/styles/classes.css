@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.forms {
+    width: 64%;
+    min-width: 270px;
+    height: 100%;
+    min-height: 410px;
+    padding-left: 4%;
+    margin: 0 5%;
+}
+
+@media only screen and (max-width: 734px) {
+    .forms {
+        position: absolute;
+        top: 15%;
+        left: 3%;
+        width: 90%;
+        height: 50%;
+        margin: 0;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
+
+.form-title {
+    margin-bottom: 0;
+    font-family: "Ubuntu", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 8%;
+}
+
+.form-description {
+    margin-top: 0;
+    margin-bottom: 5%;
+    color: hsl(231, 11%, 63%);
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(.75rem, 1vw, .8em);
+}
+
+.forms-nav-btns {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 75%;
+    left: 45%;
+    width: 25%;
+    min-width: 300px;
+    height: 3%;
+    padding: 1%;
+    background-color: inherit;
+}
+
+@Media only screen and (max-width: 806px){
+    .forms-nav-btns {
+        left: 40%;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .forms-nav-btns {
+        width: 96%;
+        top: 93vh;
+        left: 0;
+        height: 7%;
+        background-color: hsl(0, 0%, 100%);
+    }
+}
+
+.forms-nav-btns button {
+    cursor: pointer;
+}
+
+.back-btn{
+    align-items: self-start;
+    color: hsl(231, 11%, 63%);
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .9rem;
+    transition-property: font color;
+    transition-duration: .5s;
+    background: none;
+    border: none;
+    height: max-content;
+    width: max-content;
+    padding: 2%;
+}
+
+.back-btn:hover {
+    font-weight: 700;
+    color: black;
+}
+.next-btn{
+    align-items: self-start;
+    width: max-content;
+    height: max-content;
+    padding: 2.5%;
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(1rem, 1vw, 1.1rem);
+    border-radius: 6px;
+    border: none;
+    color: white;
+    margin-left: auto;
+    background-color: hsl(213, 96%, 18%);
+
+}

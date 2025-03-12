@@ -1,0 +1,35 @@
+#App {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color:hsl(0, 0%, 100%);
+  align-self: center;
+  justify-content: space-around;
+  margin: auto;
+  padding: 1.5%;
+  width: 50vw;
+  min-width: 720px;
+  height: 70vh;
+  min-height: 480px;
+  border-radius: 10px;
+  box-shadow: 2px 0 20px hsl(231, 11%, 63%);
+}
+@media only screen and (max-width:806px){
+  #App {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 734px){
+  #App {
+    position: relative;
+    width: 98vw;
+    min-width: 100px;
+    height: 100vh;
+    flex-direction: column;
+    border-radius: 0;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+    background: none;
+  }
+}

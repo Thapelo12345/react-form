@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Serif+Text:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+hr {
+    background-color: hsl(229, 24%, 87%);
+    width: 90%;
+    height: .3vh;
+    border: none;
+    border-radius: 10px;
+}
+h3, h4, h5 {
+    font-weight: 500;
+    font-family: "Ubuntu", serif;
+    font-style: normal;
+}
+
+#tables {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(217, 100%, 97%);
+    border-radius: 5px;
+    padding: 2%;
+}
+
+#table1 {
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    border-radius: inherit;
+}
+
+#table1 div {
+    padding: 1.5%;
+}
+#table1 div button {
+    color: hsl(231, 11%, 63%);
+    border: none;
+    margin-top: 2%;
+    background: none;
+    align-self: self-start;
+    text-decoration: underline;
+}
+
+#table1 div h3 {
+    margin: 0;
+}
+
+#table1 h4 {
+    margin: 0;
+    margin-left: auto;
+    align-self: center;
+}
+
+#table2 {
+    border-radius: inherit;
+}
+
+.form4-plans {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+
+.plan-name {
+    color: hsl(231, 11%, 63%);
+    font-size: clamp(.8rem, 1vw, .9rem);
+    align-self: center;
+    margin: 0;
+}
+.price-plan {
+    align-self: center;
+    margin: 0;
+    margin-left: auto;
+    font-size: clamp(.7rem, 1vw, .8rem);
+}
+
+#total-value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2%;
+    margin-top: 3%;
+}
+
+#total-value h3, h4 {
+    margin: 0;
+}
+
+#total-value h3 {
+    color: hsl(231, 11%, 63%);
+    font-weight: 400;
+
+}
+
+#total-value h4 {
+    margin-left: auto;
+    font-weight: 700;
+    color: hsl(243, 100%, 62%);
+}
+
+#confirm-btn {
+    background-color: hsl(243, 100%, 62%);
+}
