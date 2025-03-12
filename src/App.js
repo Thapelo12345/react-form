@@ -1,6 +1,6 @@
 import './App.css';
 import { useEffect } from 'react';
-import { HashRouter as Router, Route, Routes, useNavigate, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/side-menu'
 import Form1 from './components/first-form'
 import Form2 from './components/second-form';
@@ -11,26 +11,19 @@ import { store } from './state/store'
 import { Provider } from 'react-redux';
 import FinalForm from './components/fifth-form';
 
-function RedirectOnRefresh() {
-  const location = useLocation();
-  const navigate = useNavigate();
+function App() {
 
   useEffect(() => {
-    if (location.pathname !== '/') {
-      navigate('/');
+    if (window.location.hash !== "#/") {
+      window.location.hash = "#/";
     }
-  }, []); // Runs only on mount
+  }, []); // Runs once on mount
 
-  return null;
-}
-
-function App() {
   return (
     <div id="App">
 
 <Provider store={store}>
     <Router>
-    <RedirectOnRefresh />
     <Header />
 
     <Routes>
