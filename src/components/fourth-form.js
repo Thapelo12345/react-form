@@ -4,7 +4,6 @@ import $ from "jquery";
 import "../styles/classes.css";
 import "../styles/fourth-form.css";
 import { removeOns, store } from "../state/store";
-import jQuery from "jquery";
 
 function getNumber(str) {
   return Number(str.split("/")[0].split("$")[1]);
