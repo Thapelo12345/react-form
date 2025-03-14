@@ -12,6 +12,8 @@
 @media only screen and (max-width: 734px) {
     .forms {
         position: absolute;
+        display: flex;
+        flex-direction: column;
         top: 15%;
         left: 3%;
         width: 90%;
